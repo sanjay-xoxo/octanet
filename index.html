@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./script.js">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg white">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="" alt="">
+                <span class="text-uppercase fw-lighter ms-2">Mens</span>
+            </a>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle  badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle  badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle  badge bg-primary"></span>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="" data-bs-target="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#collection">Collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#specials">Specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#about">About</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#popular">Popular</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best Collection</h2>
+                <h1 class="text-upper py-2 fw-bold text-white">New Arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop Now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Best Price</h2>
+                <h1 class="text-upper py-2 fw-bold text-white">New Seasons</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Buy Now</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+    <!-- Collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn " data-filter="
+                    *">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter="
+                    .best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter="
+                    .feat">Featured</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter="
+                    .new">New Arrivals</button>
+
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-spencer-selover-428340.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">white Color T-Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-spencer-selover-428333.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Blue Color T-Shirt</p>
+                            <span class="fw-bold">$ 90.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-cottonbro-studio-4736601.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">white Color Shirt</p>
+                            <span class="fw-bold">$ 85.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-the-lazy-artist-gallery-1300550.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Puple Color shit</p>
+                            <span class="fw-bold">$ 905.500</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-r-fera-432059.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Black Color Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-andrea-piacquadio-845434.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Red Color T-Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-hasib-khorami-1496647.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Green Color T-Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="./pexels-ryan-holloway-242829.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Blue Color Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./pexels-jeffrey-reed-769749.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4 ">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Shirt</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./pexels-luizph-3029796.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4 ">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Shirt</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./pexels-wendy-wei-1656684.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4 ">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Shirt</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./pexels-jeffrey-reed-769733.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4 ">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Shirt</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center text-center justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-white">Discount Up To 40%</span>
+                    <h2 class="mt-2 mb-4 text-white">Grand Sales Offers</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+            <div class="row">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                    <img src="./pexels-cottonbro-studio-5052875.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lorem ipsum dolar sitamet consectetur adipiscing.</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eius
+                            maiores perferendis harum fugit porro modi iusto incidunt nam, iure quasi cumque itaque amet
+                            veritatis quaerat suscipit, assumenda veniam aliquid.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fa-bold">Author</span> Avinash
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                    <img src="./pexels-miguel-á-padriñán-1591056.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lorem ipsum dolar sitamet consectetur adipiscing.</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eius
+                            maiores perferendis harum fugit porro modi iusto incidunt nam, iure quasi cumque itaque amet
+                            veritatis quaerat suscipit, assumenda veniam aliquid.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fa-bold">Author</span> Avinash
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                    <img src="./pexels-pixabay-262508.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lorem ipsum dolar sitamet consectetur adipiscing.</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eius
+                            maiores perferendis harum fugit porro modi iusto incidunt nam, iure quasi cumque itaque amet
+                            veritatis quaerat suscipit, assumenda veniam aliquid.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fa-bold">Author</span> Avinash
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5 ">
+                        <h2 class="position-relative d-inline-block">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, aut!
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, quam ea vero doloribus rerum,
+                        sequi voluptates aut pariatur quaerat placeat dolores dolor adipisci modi distinctio repellendus
+                        alias aspernatur corrupti praesentium!</p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="./pexels-helena-lopes-708440.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Popular of this Year</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Top Rated</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-victoire-kibwana-16933082.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-tan-danh-1129019.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-jansel-ferma-2315313.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best Selling</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-victoire-kibwana-16933082.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-tan-danh-1129019.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-jansel-ferma-2315313.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">On Sale</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-victoire-kibwana-16933082.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-tan-danh-1129019.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="./pexels-jansel-ferma-2315313.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <div>
+                        <p class="mb-0">Blue Shirt</p>
+                        <span>$ 20.00</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section id="newsletter" class="py-5">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscrption</h2>
+                </div>
+                <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet
+                    repellendus sunt alias quis sit.</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" placeholder="Enter Your Email...." class="form-control">
+                    <button class="btn btn-primary" type="submit">Subscrption</button>
+                </div>
+            </div>
+    </div>
+    </section>
+    <footer class="py-5 ">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="index.html" class="text-uppercase text-decoration-none brand text-white">Mens</a>
+                    <p class="text-white text-muted mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae unde totam, repudiandae laboriosam
+                        delectus hic quos mollitia deserunt nam quas.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted"><i
+                                    class="fas fa-chevron-right me-1"></i>Home</a>
+                        </li>
+
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted"><i
+                                    class="fas fa-chevron-right me-1"></i>Collection</a>
+                        </li>
+
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted"><i
+                                    class="fas fa-chevron-right me-1"></i>Blogs</a>
+                        </li>
+
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted"><i
+                                    class="fas fa-chevron-right me-1"></i>About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            New Cross street,Tamil Nadu,As ,765,India
+                            States of India
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            @Avinash.supportgmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +9999 9898 234
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div class="d-flex">
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src=""></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
